@@ -8,10 +8,8 @@
 
 ## Question 3: Explain the primary key and foreign key concepts in PostgreSQL.
 #### IN relational database primary and foreign key concepts are very crucial.the are useally used for making relation between 2 table.I am explaining both of them in the down bellow
-
-#### Primay key: This is used for make a unique identification of a record.It can't be null or duplicate.
-
-#### Foreign key: This is used for make relaionship.It is used as reference key in the other table.it can be duplicate.it is a identifier of another collection records.
+-Primay key: This is used for make a unique identification of a record.It can't be null or duplicate.
+-Foreign key: This is used for make relaionship.It is used as reference key in the other table.it can be duplicate.it is a identifier of another collection records.
 
 
 ## Question 4: What is the difference between the VARCHAR and CHAR data types?
