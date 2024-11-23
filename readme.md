@@ -38,3 +38,14 @@ WHERE student_id=1
 ## Question 8: Explain the GROUP BY clause and its role in aggregation operations.
 #### The GROUP BY clause in SQL is used to arrange identical data into groups. It is often used in conjunction with aggregate functions (like COUNT(), SUM(), AVG(), MAX(), MIN()) to perform calculations on each group of data.The GROUP BY clause helps me summarize large sets of data by grouping rows that have the same values in specified columns, allowing me to perform aggregation on each group.
 
+
+## Question 9: What is the purpose of an index in PostgreSQL, and how does it optimize query performance?
+#### An index in PostgreSQL is a data structure that improves the speed of data retrieval operations on a table at the cost of additional storage and maintenance overhead. Indexes allow PostgreSQL to quickly locate rows in a table based on the values in one or more columns. Without an index, PostgreSQL would have to perform a sequential scan of the entire table to find the rows that match a query, which can be inefficient for large tables.
+
+
+## Question 10: Explain the concept of a PostgreSQL view and how it differs from a table.
+#### A view in PostgreSQL is a virtual table that provides a way to encapsulate a query result as if it were a real table. A view does not store data itself but instead stores a query that can be executed to retrieve data from one or more tables. When i query a view, PostgreSQL runs the underlying query and returns the result, essentially providing an abstraction layer over the actual data stored in the tables.
+
+#### In PostgreSQL, a table is a fundamental structure that physically stores data, which can be directly modified using operations like INSERT, UPDATE, and DELETE. It holds persistent data in rows and columns. A view, on the other hand, is a virtual table that does not store data but instead represents a query that retrieves data from underlying tables. Views simplify complex queries, provide a way to abstract data, and can restrict access to sensitive information. Unlike tables, views are dynamic and reflect the most current data from the tables whenever queried.
+
+
