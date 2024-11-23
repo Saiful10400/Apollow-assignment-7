@@ -211,6 +211,20 @@ SELECT round(avg(age),2) as average_age from students
 
 
 
+-- ..................................Query8.................................................
+
+-- Question: Retrieve the names of students whose email addresses contain 'example.com'.
+-- 
+
+-- Code:
+SELECT student_name from students
+WHERE email='example.com'
+
+
+-- Explaination: here i use "round" phrase for round the average.'avg' phrase used for get the average of average_age.
+
+
+
 
 
 
