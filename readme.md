@@ -33,5 +33,8 @@
 SELECT * FROM students
 SET student_name='Saiful Islam'
 WHERE student_id=1
+```
 
+## Question 8: Explain the GROUP BY clause and its role in aggregation operations.
+#### The GROUP BY clause in SQL is used to arrange identical data into groups. It is often used in conjunction with aggregate functions (like COUNT(), SUM(), AVG(), MAX(), MIN()) to perform calculations on each group of data.The GROUP BY clause helps me summarize large sets of data by grouping rows that have the same values in specified columns, allowing me to perform aggregation on each group.
 
