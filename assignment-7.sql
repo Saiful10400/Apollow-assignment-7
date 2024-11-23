@@ -179,24 +179,38 @@ ORDER BY student_id ASC
 LIMIT 2 OFFSET 2
 
 
--- Explaination: here we retrieved 2 students name "Limit" phrase limit the total number of row and "Offset" phrase skip the row from the top.
+-- Explaination: here we retrieved 2 students name. "Limit" phrase limit the total number of row and "Offset" phrase skip the row from the top.
 
 
 
 -- ..................................Query6.................................................
 
--- Question:
+-- Question:Retrieve the course names and the number of students enrolled in each course.
 -- 
 
 -- Code:
+SELECT course_name,count(course_name) as students_enrolled from enrollment
+JOIN courses USING(course_id)
+GROUP BY course_name
+
+
+-- Explaination: At first i join 2 table with "Join" key word.and then i make a group of "group_name".Then i cout the number with aggregation function.
 
 
 
--- Explaination:
+-- ..................................Query7.................................................
+
+-- Question: Calculate and display the average age of all students.
+-- 
+
+-- Code:
+SELECT round(avg(age),2) as average_age from students
+
+
+-- Explaination: here i use "round" phrase for round the average.'avg' phrase used for get the average of average_age.
 
 
 
-SELECT * FROM courses
 
 
 
