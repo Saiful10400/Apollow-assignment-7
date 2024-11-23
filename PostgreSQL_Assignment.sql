@@ -145,9 +145,8 @@ WHERE course_name='Next.js'
 -- Code:
 UPDATE students
 SET status='Awarded'
-WHERE frontend_mark+backend_mark=(SELECT (frontend_mark + backend_mark )as total FROM students
-ORDER BY total DESC LIMIT 1 )
-
+WHERE frontend_mark+backend_mark=(SELECT frontend_mark + backend_mark  FROM students
+ORDER BY frontend_mark + backend_mark  DESC LIMIT 1 )
 
 -- Explaination: we retrieved the max total mark with the help of sub-query.and then update it .
 
@@ -218,14 +217,10 @@ SELECT round(avg(age),2) as average_age from students
 
 -- Code:
 SELECT student_name from students
-WHERE email='example.com'
+WHERE email LIKE'%example.com%'
 
 
 -- Explaination: here i where statement,that let me to apply condition on top of the query.
-
-
-
-
 
 
 
