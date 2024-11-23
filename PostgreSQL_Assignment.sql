@@ -221,7 +221,7 @@ SELECT student_name from students
 WHERE email='example.com'
 
 
--- Explaination: here i use "round" phrase for round the average.'avg' phrase used for get the average of average_age.
+-- Explaination: here i where statement,that let me to apply condition on top of the query.
 
 
 
